@@ -2,9 +2,16 @@
 
 interface iSystem {
 
-    public function boot();
+    public static function boot();
 
-    public function shutdown();
+    public static function shutdown();
 }
 
-?>
+class System implements iSystem{
+    static function boot() {
+        echo 'Starting Up System...<br/>';
+    }
+    static function shutdown() {
+        echo 'Shuting down...<br/>';
+    }
+}
