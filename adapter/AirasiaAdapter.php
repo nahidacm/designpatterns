@@ -3,6 +3,7 @@
 class AirasiaAdapter{
     
     protected $_adaptee;
+    public $v;
 
     public function __construct() {
         $this->_adaptee = new AirAsiaApi;
